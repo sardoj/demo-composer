@@ -1,0 +1,14 @@
+{
+    "name": "sardoj/demo-composer",
+    "description": "It's a super cool package!",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan SARDO",
+            "email": "sardoj@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
