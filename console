@@ -1,23 +1,14 @@
+#!/usr/bin/env php
 <?php
 
 require __DIR__.'/vendor/autoload.php';
 
-if (empty($_REQUEST['p'])) {
+if (empty($argv[1])) {
     die("You have give a parameter\n");
 }
 
-$page = $_REQUEST['p'];
+$className = "\\Sardoj\\DemoComposer\\Console\\".$argv[1];
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
-<body>
-    Page demandée : <?php echo $page; ?>
-</body>
-</html>
+new $className;
+
+echo "\n";
